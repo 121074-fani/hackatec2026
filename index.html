@@ -280,33 +280,7 @@
 
 <div class="app-shell">
 
-  <!-- ══ SCREEN 1 — LOGIN ══ -->
-  <div class="screen active" id="s1">
-    <div class="status-bar"><span class="time">9:41</span><div class="status-icons"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="7" width="20" height="11" rx="2"/><path d="M22 11h1v2h-1z"/></svg></div></div>
-    <div class="login-wrap">
-      <div class="login-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
-      <div class="login-app-name">Inven-Smart</div>
-      <div class="login-subtitle">Gestión inteligente de almacén</div>
-      <div class="biometric-panel">
-        <div class="bio-ring" id="bioBtn" onclick="startBioScan()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C9.8 2 8 3.8 8 6c0 1.1.45 2.1 1.17 2.83M12 2c2.2 0 4 1.8 4 4 0 1.1-.45 2.1-1.17 2.83M7 11.5C5.33 10.36 4 8.3 4 6M17 11.5c1.67-1.14 3-3.2 3-5.5M10 14c-.55.65-.9 1.29-1 2M14 14c.55.65.9 1.29 1 2M12 22v-6M9.5 19.5l2.5 2.5 2.5-2.5"/></svg>
-        </div>
-        <div class="bio-label">Validación biométrica</div>
-        <div class="bio-sub">Toca para escanear</div>
-        <div class="login-or"><span>— o accede con ID —</span></div>
-        <input class="login-input" placeholder="Matrícula / ID de empleado" type="text" />
-        <button class="btn btn-primary btn-full" onclick="goTo('s2')">Ingresar</button>
-      </div>
-      <div class="security-badges">
-        <div class="sec-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>TLS/SSL</div>
-        <div class="sec-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>JWT</div>
-        <div class="sec-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>LFPDPPP</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ SCREEN 2 — DASHBOARD ══ -->
-  <div class="screen" id="s2">
+  <!-- ══ SCREEN 2 — DASHBOARD ══ -->\n  <div class="screen active" id="s2">
     <div class="status-bar"><span class="time">9:41</span><div class="status-icons"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="7" width="20" height="11" rx="2"/><path d="M22 11h1v2h-1z"/></svg></div></div>
     <div class="header">
       <div class="header-logo">
@@ -319,7 +293,7 @@
       </div>
     </div>
     <div class="scroll-area">
-      <div class="greeting">Buen día, <span>Juan Reyes</span> 👋</div>
+      <div class="greeting">Buen día, <span>Juan Reyes</span> </div>
       <div class="stats-grid">
         <div class="stat-tile"><div class="val">1,284</div><div class="lbl">SKUs totales</div></div>
         <div class="stat-tile"><div class="val green">97.2%</div><div class="lbl">Precisión</div></div>
@@ -467,7 +441,7 @@
         <div class="location-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 00-8-8z"/></svg>Pasillo D · Estante 2 · Pos. 4</div>
       </div>
       <div class="ai-panel">
-        <div class="ai-title">⚡ IA predictiva — stock recomendado</div>
+        <div class="ai-title"> IA predictiva — stock recomendado</div>
         <div class="ai-bar-item"><div class="ai-bar-name">Rodamiento</div><div class="ai-bar-track"><div class="ai-bar-fill blue" style="width:80%"></div></div><div class="ai-bar-pct" style="color:var(--accent2);">80%</div></div>
         <div class="ai-bar-item"><div class="ai-bar-name">Fusible 30A</div><div class="ai-bar-track"><div class="ai-bar-fill yellow" style="width:35%"></div></div><div class="ai-bar-pct" style="color:var(--accent-yellow);">35%</div></div>
         <div class="ai-bar-item"><div class="ai-bar-name">Filtro aceite</div><div class="ai-bar-track"><div class="ai-bar-fill orange" style="width:5%"></div></div><div class="ai-bar-pct" style="color:var(--accent-orange);">5%</div></div>
@@ -609,7 +583,7 @@
 
       <!-- Resumen -->
       <div class="ticket-summary">
-        <div class="ticket-summary-title">📋 Resumen del pedido</div>
+        <div class="ticket-summary-title"> Resumen del pedido</div>
         <div class="summary-row"><span class="summary-label">Subtotal</span><span class="summary-value" id="sumSubtotal">$925.00</span></div>
         <div class="summary-row iva"><span class="summary-label">IVA (16%)</span><span class="summary-value" id="sumIva">$148.00</span></div>
         <div class="summary-row"><span class="summary-label">Descuento proveedor</span><span class="summary-value" id="sumDesc">— $0.00</span></div>
@@ -636,7 +610,55 @@
   </div>
 </div>
 
+
+<!-- ══════════════════════════════════════
+     MODAL — ALERTAS RECIENTES
+══════════════════════════════════════ -->
+<div class="modal-backdrop" id="notifModal" onclick="closeNotifIfBackdrop(event)">
+  <div class="modal-sheet" style="max-height:80svh;">
+    <div class="modal-handle"></div>
+    <div class="modal-header">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;color:var(--accent-red,#ff3d6b)"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+        <span class="modal-title" style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:var(--text)">Alertas Recientes</span>
+      </div>
+      <div class="modal-close" onclick="closeNotifModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+    </div>
+    <div class="modal-body" style="padding:16px 20px;">
+      <div style="display:flex; gap:12px; padding:12px 0; border-bottom:1px solid var(--border);">
+        <div style="width:3px; border-radius:2px; flex-shrink:0; min-height:40px; background:var(--accent-red,#ff3d6b);"></div>
+        <div>
+          <div style="font-size:13px; font-weight:700; color:var(--text); margin-bottom:2px;">Salida no autorizada</div>
+          <div style="font-size:11px; color:var(--text2); line-height:1.4;">Llave de torque · Pasillo B</div>
+          <div style="font-size:10px; color:var(--text3); margin-top:4px;">Hace 5 min</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:12px; padding:12px 0;">
+        <div style="width:3px; border-radius:2px; flex-shrink:0; min-height:40px; background:var(--accent,#3b82f6);"></div>
+        <div>
+          <div style="font-size:13px; font-weight:700; color:var(--text); margin-bottom:2px;">Comportamiento extraño</div>
+          <div style="font-size:11px; color:var(--text2); line-height:1.4;">Usuario #12 · accesos fuera de horario</div>
+          <div style="font-size:10px; color:var(--text3); margin-top:4px;">Ayer 22:43</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
+
+  function openNotifModal() {
+    document.getElementById('notifModal').classList.add('open');
+    document.getElementById('notifModal').style.display = 'flex';
+  }
+  function closeNotifModal() {
+    document.getElementById('notifModal').classList.remove('open');
+    setTimeout(() => { document.getElementById('notifModal').style.display = 'none'; }, 200);
+  }
+  function closeNotifIfBackdrop(e) {
+    if (e.target === document.getElementById('notifModal')) closeNotifModal();
+  }
+
   function goTo(id) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     document.getElementById(id).classList.add('active');
